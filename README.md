@@ -11,12 +11,13 @@ When do people start bike-share trips at one Manhattan Citi Bike station, and ho
 - **Size:** 4,212 trips, 15 columns, Aug 1-31, 2015. Stored in `data/citibike.csv`.
 
 ## 3. Input and output
-| Input | Output |
-|-------|--------|
-| ![input](input_example.png) | ![output](output_example.png) |
+**Input:** trip records, one row per trip (first 5 of 4,212 rows shown).
 
-- **Input:** trip records (one row per trip).
-- **Output:** average number of trips started in each hour of the day, for weekdays and weekends.
+![input](input_example.png)
+
+**Output:** average number of trips started in each hour of the day, for weekdays and weekends.
+
+![output](output_example.png)
 
 ## 4. First working code
 `analysis.ipynb` loads the CSV with Pandas, counts trips per hour for each day, averages weekdays and weekends separately, and saves both images above.
